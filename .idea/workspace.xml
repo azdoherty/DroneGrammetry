@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2fc0ebc2-01d4-433c-a2b5-cd25b8334882" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/matchingtest.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/37c6e30f13509df12a62ec264e3fa89b.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/bb7bdc67568f1d90603a21f24b887e1c.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MergeImages.py" afterPath="$PROJECT_DIR$/MergeImages.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/notes/bundle_adjustment_ideas.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/matchingtest.py" afterPath="$PROJECT_DIR$/test/matchingtest.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,14 +26,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="matchingtest.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="matchingtest.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/matchingtest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="8" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+            <state relative-caret-position="136">
+              <caret line="8" column="52" lean-forward="true" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="52" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bundle_adjustment_ideas.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/notes/bundle_adjustment_ideas.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="22" lean-forward="false" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -58,6 +65,7 @@
       <list>
         <option value="$PROJECT_DIR$/MergeImages.py" />
         <option value="$PROJECT_DIR$/test/matchingtest.py" />
+        <option value="$PROJECT_DIR$/notes/bundle_adjustment_ideas.txt" />
       </list>
     </option>
   </component>
@@ -89,11 +97,6 @@
             <path>
               <item name="DroneGrammetry" type="b2602c69:ProjectViewProjectNode" />
               <item name="DroneGrammetry" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DroneGrammetry" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DroneGrammetry" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -189,11 +192,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/matchingtest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="8" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+        <state relative-caret-position="136">
+          <caret line="8" column="52" lean-forward="true" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="52" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notes/bundle_adjustment_ideas.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="22" lean-forward="false" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>

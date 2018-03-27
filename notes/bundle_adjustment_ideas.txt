@@ -1,0 +1,4 @@
+1) compute homography from each image to its K nearest neighbors (compute w/ GPS coords if we have, use RANSAC otherwise)
+2) make a matching array of keypoints which match in at least 3 images
+3) create an error equation to minimize the difference between different keypoint projections
+4) solve that equation

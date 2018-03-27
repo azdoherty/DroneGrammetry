@@ -12,7 +12,7 @@ class TestMatchingMethods(unittest.TestCase):
         kp2, dsc2 = get_keypoints(img2)
         gm = match_keypoints(dsc1, dsc2)
         M, matchesMask = find_homography(kp1, kp2, gm)
-        
+
 
 
 if __name__ == '__main__':
