@@ -2,6 +2,7 @@ import cv2
 import numpy as np
 import os
 import sys
+from matplotlib import pyplot as plt
 
 
 def draw_matches(img1, kp1, img2, kp2, matches, color=None):
@@ -61,6 +62,63 @@ def draw_matches(img1, kp1, img2, kp2, matches, color=None):
 
     return new_img
 
+
+def get_keypoints(img):
+    """
+    :param img: image
+    :return: keypoints and descriptors
+    """
+    kpd = cv2.ORB_create()
+    kp, des = kpd.detectAndCompute(img, None)
+    return kp, des
+
+
+def match_keypoints(desc1, desc2, k=2, thresh=.7):
+    """
+    match keypoints using flann matcher
+    :param desc1: descripters of keypoint set 1
+    :param desc2: descriptors of keypoint set 2
+    :param k: K for flann k nearest neighbors
+    :param thresh: threshold for a good match
+    :return:
+    """
+    index_params = dict(algorithm=0, trees=5)
+    search_params = dict(checks=50)
+    flann = cv2.FlannBasedMatcher(index_params, search_params)
+    matches = flann.knnMatch(desc1, desc2, k=k)
+    goodmatches = []
+    for m, n in matches:
+        if m.distance < thresh * n.distance:
+            goodmatches.append(m)
+    return goodmatches
+
+def find_homography(kp1, kp2, goodmatches):
+    """
+    given the two sets of keypoints and good matches compute the homography
+    :param kp1:
+    :param kp2:
+    :param goodmatches:
+    :return:
+    """
+    src_pts = np.float32([kp1[m.trainIdx].pt for m in goodmatches]).reshape(-1, 1, 2)
+    dst_pts = np.float32([kp2[m.trainIdx].pt for m in goodmatches]).reshape(-1, 1, 2)
+
+    M, mask = cv2.findHomography(src_pts, dst_pts, cv2.RANSAC, 5.0)
+    matchesMask = mask.ravel().tolist()
+    return M, matchesMask
+
+def draw_kps(src, dst, kp1, kp2, good, matchesMask):
+    draw_params = dict(matchColor=(0, 255, 0),  # draw matches in green color
+                       singlePointColor=None,
+                       matchesMask=matchesMask,  # draw only inliers
+                       flags=2)
+
+    img3 = cv2.drawMatches(src, kp1, dst, kp2, good, None, **draw_params)
+
+    plt.imshow(img3, 'gray'), plt.show()
+
+
+
 def stitch_images(imlist, outfolder=None):
     """
     :param imlist: list of loaded image objects
@@ -69,12 +127,11 @@ def stitch_images(imlist, outfolder=None):
           - add bundle adjustment
           - add 3d reconstruction
     """
-    kpd = cv2.ORB_create()
     kps = []
     descs = []
     for im in imlist:
         # extract keypoints
-        kp, des = kpd.detectAndCompute(im, None)
+        kp, des = get_keypoints(im)
         kps.append(kp)
         descs.append(des)
 
