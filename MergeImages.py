@@ -67,8 +67,18 @@ def get_keypoints(img):
     """
     :param img: image
     :return: keypoints and descriptors
+    TODO -
+        try the following:
+            cv2.KAZE_create()
+            cv2.AKAZE_create()
+            cv2.BRISK_create()
+
     """
     kpd = cv2.ORB_create()
+    #kpd = cv2.xfeatures2d.SIFT_create()
+   #kpd = cv2.xfeatures2d_FREAK()
+
+    #kpd = cv2.SURF
     kp, des = kpd.detectAndCompute(img, None)
     return kp, des
 
@@ -84,9 +94,9 @@ def match_keypoints(desc1, desc2, k=2, thresh=.9):
     """
     index_params = dict(algorithm=0, trees=5)
     search_params = dict(checks=50)
-    matcher = cv2.FlannBasedMatcher(index_params, search_params)
+    #matcher = cv2.FlannBasedMatcher(index_params, search_params)
     matcher = cv2.DescriptorMatcher_create("BruteForce")
-    print(desc1)
+    #matcher = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)
     matches = matcher.knnMatch(desc1, desc2, k=k)
     goodmatches = []
     for m, n in matches:
@@ -108,15 +118,15 @@ def find_homography(kp1, kp2, goodmatches):
     matchesMask = mask.ravel().tolist()
     return M, matchesMask
 
-def draw_kps(src, dst, kp1, kp2, good, matchesMask):
+def draw_kps(src, dst, kp1, kp2, good, matchesMask, fname=None):
     draw_params = dict(matchColor=(0, 255, 0),  # draw matches in green color
                        singlePointColor=None,
                        matchesMask=matchesMask,  # draw only inliers
                        flags=2)
 
-    img3 = cv2.drawMatches(src, kp1, dst, kp2, good, None, **draw_params)
-
-    plt.imshow(img3, 'gray'), plt.show()
+    match_img = cv2.drawMatches(src, kp1, dst, kp2, good, None, **draw_params)
+    if fname:
+        cv2.imwrite(fname, match_img)
 
 
 

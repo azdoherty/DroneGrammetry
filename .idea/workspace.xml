@@ -17,10 +17,11 @@
       <file leaf-file-name="MergeImages.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MergeImages.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="86" column="35" lean-forward="false" selection-start-line="86" selection-start-column="18" selection-end-line="86" selection-end-column="35" />
+            <state relative-caret-position="639">
+              <caret line="123" column="46" lean-forward="false" selection-start-line="123" selection-start-column="35" selection-end-line="123" selection-end-column="46" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
+                <element signature="e#155#2786#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -29,8 +30,8 @@
       <file leaf-file-name="matchingtest.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/matchingtest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+            <state relative-caret-position="238">
+              <caret line="14" column="74" lean-forward="true" selection-start-line="14" selection-start-column="74" selection-end-line="14" selection-end-column="74" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -67,6 +68,13 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>draw</find>
+      <find>ORB</find>
+      <find>print</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -74,8 +82,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/notes/bundle_adjustment_ideas.txt" />
-        <option value="$PROJECT_DIR$/test/matchingtest.py" />
         <option value="$PROJECT_DIR$/MergeImages.py" />
+        <option value="$PROJECT_DIR$/test/matchingtest.py" />
       </list>
     </option>
   </component>
@@ -135,7 +143,39 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Nosetests for matchingtest.TestMatchingMethods.test_all">
+  <component name="RunManager" selected="Python tests.Nosetests for matchingtest.TestMatchingMethods.test_1">
+    <configuration name="MergeImages" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="DroneGrammetry" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MergeImages.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="Nosetests for matchingtest.TestMatchingMethods.test_1" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="DroneGrammetry" />
+      <option name="_new_regexPattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;matchingtest.TestMatchingMethods.test_1&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+    </configuration>
     <configuration name="Nosetests for matchingtest.TestMatchingMethods.test_all" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -166,14 +206,18 @@
       <option name="_new_target" value="&quot;$PROJECT_DIR$/test/matchingtest.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
-    <list size="2">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Python tests.Nosetests in matchingtest.py" />
       <item index="1" class="java.lang.String" itemvalue="Python tests.Nosetests for matchingtest.TestMatchingMethods.test_all" />
+      <item index="2" class="java.lang.String" itemvalue="Python.MergeImages" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Nosetests for matchingtest.TestMatchingMethods.test_1" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Nosetests for matchingtest.TestMatchingMethods.test_all" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Nosetests in matchingtest.py" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Nosetests for matchingtest.TestMatchingMethods.test_1" />
+        <item index="1" class="java.lang.String" itemvalue="Python.MergeImages" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Nosetests in matchingtest.py" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Nosetests for matchingtest.TestMatchingMethods.test_all" />
       </list>
     </recent_temporary>
   </component>
@@ -191,35 +235,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Nosetests_for_matchingtest_TestMatchingMethods_test_all - 2018.03.31 at 09h 23m 22s.xml">
-      <configuration name="Nosetests for matchingtest.TestMatchingMethods.test_all" configurationId="tests" />
+    <history-entry file="Nosetests_for_matchingtest_TestMatchingMethods_test_1 - 2018.04.03 at 22h 37m 55s.xml">
+      <configuration name="Nosetests for matchingtest.TestMatchingMethods.test_1" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_for_matchingtest_TestMatchingMethods_test_all - 2018.03.31 at 09h 23m 49s.xml">
-      <configuration name="Nosetests for matchingtest.TestMatchingMethods.test_all" configurationId="tests" />
+    <history-entry file="Nosetests_for_matchingtest_TestMatchingMethods_test_1 - 2018.04.03 at 22h 38m 08s.xml">
+      <configuration name="Nosetests for matchingtest.TestMatchingMethods.test_1" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_for_matchingtest_TestMatchingMethods_test_all - 2018.03.31 at 09h 24m 13s.xml">
-      <configuration name="Nosetests for matchingtest.TestMatchingMethods.test_all" configurationId="tests" />
+    <history-entry file="Nosetests_for_matchingtest_TestMatchingMethods_test_1 - 2018.04.03 at 22h 38m 43s.xml">
+      <configuration name="Nosetests for matchingtest.TestMatchingMethods.test_1" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_for_matchingtest_TestMatchingMethods_test_all - 2018.04.03 at 22h 18m 11s.xml">
-      <configuration name="Nosetests for matchingtest.TestMatchingMethods.test_all" configurationId="tests" />
+    <history-entry file="Nosetests_for_matchingtest_TestMatchingMethods_test_1 - 2018.04.03 at 22h 38m 46s.xml">
+      <configuration name="Nosetests for matchingtest.TestMatchingMethods.test_1" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_for_matchingtest_TestMatchingMethods_test_all - 2018.04.03 at 22h 19m 21s.xml">
-      <configuration name="Nosetests for matchingtest.TestMatchingMethods.test_all" configurationId="tests" />
+    <history-entry file="Nosetests_for_matchingtest_TestMatchingMethods_test_1 - 2018.04.03 at 22h 39m 10s.xml">
+      <configuration name="Nosetests for matchingtest.TestMatchingMethods.test_1" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_for_matchingtest_TestMatchingMethods_test_all - 2018.04.03 at 22h 23m 08s.xml">
-      <configuration name="Nosetests for matchingtest.TestMatchingMethods.test_all" configurationId="tests" />
+    <history-entry file="Nosetests_for_matchingtest_TestMatchingMethods_test_1 - 2018.04.03 at 22h 39m 36s.xml">
+      <configuration name="Nosetests for matchingtest.TestMatchingMethods.test_1" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_for_matchingtest_TestMatchingMethods_test_all - 2018.04.03 at 22h 23m 17s.xml">
-      <configuration name="Nosetests for matchingtest.TestMatchingMethods.test_all" configurationId="tests" />
+    <history-entry file="Nosetests_in_matchingtest_py - 2018.04.03 at 22h 34m 07s.xml">
+      <configuration name="Nosetests in matchingtest.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_for_matchingtest_TestMatchingMethods_test_all - 2018.04.03 at 22h 23m 32s.xml">
-      <configuration name="Nosetests for matchingtest.TestMatchingMethods.test_all" configurationId="tests" />
+    <history-entry file="Nosetests_in_matchingtest_py - 2018.04.03 at 22h 36m 25s.xml">
+      <configuration name="Nosetests in matchingtest.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_for_matchingtest_TestMatchingMethods_test_all - 2018.04.03 at 22h 23m 46s.xml">
-      <configuration name="Nosetests for matchingtest.TestMatchingMethods.test_all" configurationId="tests" />
+    <history-entry file="Nosetests_in_matchingtest_py - 2018.04.03 at 22h 37m 31s.xml">
+      <configuration name="Nosetests in matchingtest.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_for_matchingtest_TestMatchingMethods_test_all - 2018.04.03 at 22h 24m 03s.xml">
-      <configuration name="Nosetests for matchingtest.TestMatchingMethods.test_all" configurationId="tests" />
+    <history-entry file="Nosetests_in_matchingtest_py - 2018.04.03 at 22h 37m 39s.xml">
+      <configuration name="Nosetests in matchingtest.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -260,6 +304,7 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#155#2786#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -287,8 +332,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/matchingtest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        <state relative-caret-position="238">
+          <caret line="14" column="74" lean-forward="true" selection-start-line="14" selection-start-column="74" selection-end-line="14" selection-end-column="74" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
@@ -297,10 +342,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MergeImages.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="86" column="35" lean-forward="false" selection-start-line="86" selection-start-column="18" selection-end-line="86" selection-end-column="35" />
+        <state relative-caret-position="639">
+          <caret line="123" column="46" lean-forward="false" selection-start-line="123" selection-start-column="35" selection-end-line="123" selection-end-column="46" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#155#2786#0" expanded="false" />
           </folding>
         </state>
       </provider>
