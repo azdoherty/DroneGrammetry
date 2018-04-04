@@ -73,7 +73,7 @@ def get_keypoints(img):
     return kp, des
 
 
-def match_keypoints(desc1, desc2, k=2, thresh=.7):
+def match_keypoints(desc1, desc2, k=2, thresh=.9):
     """
     match keypoints using flann matcher
     :param desc1: descripters of keypoint set 1
@@ -84,8 +84,10 @@ def match_keypoints(desc1, desc2, k=2, thresh=.7):
     """
     index_params = dict(algorithm=0, trees=5)
     search_params = dict(checks=50)
-    flann = cv2.FlannBasedMatcher(index_params, search_params)
-    matches = flann.knnMatch(desc1, desc2, k=k)
+    matcher = cv2.FlannBasedMatcher(index_params, search_params)
+    matcher = cv2.DescriptorMatcher_create("BruteForce")
+    print(desc1)
+    matches = matcher.knnMatch(desc1, desc2, k=k)
     goodmatches = []
     for m, n in matches:
         if m.distance < thresh * n.distance:
@@ -102,7 +104,6 @@ def find_homography(kp1, kp2, goodmatches):
     """
     src_pts = np.float32([kp1[m.trainIdx].pt for m in goodmatches]).reshape(-1, 1, 2)
     dst_pts = np.float32([kp2[m.trainIdx].pt for m in goodmatches]).reshape(-1, 1, 2)
-
     M, mask = cv2.findHomography(src_pts, dst_pts, cv2.RANSAC, 5.0)
     matchesMask = mask.ravel().tolist()
     return M, matchesMask
