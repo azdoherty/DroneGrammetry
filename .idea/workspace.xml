@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2fc0ebc2-01d4-433c-a2b5-cd25b8334882" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MergeImages.py" afterPath="$PROJECT_DIR$/MergeImages.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/matchingtest.py" afterPath="$PROJECT_DIR$/test/matchingtest.py" />
     </list>
@@ -17,8 +18,8 @@
       <file leaf-file-name="MergeImages.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MergeImages.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="639">
-              <caret line="123" column="46" lean-forward="false" selection-start-line="123" selection-start-column="35" selection-end-line="123" selection-end-column="46" />
+            <state relative-caret-position="850">
+              <caret line="117" column="41" lean-forward="true" selection-start-line="117" selection-start-column="41" selection-end-line="117" selection-end-column="41" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
                 <element signature="e#155#2786#0" expanded="false" />
@@ -30,21 +31,11 @@
       <file leaf-file-name="matchingtest.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/matchingtest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="74" lean-forward="true" selection-start-line="14" selection-start-column="74" selection-end-line="14" selection-end-column="74" />
+            <state relative-caret-position="300">
+              <caret line="21" column="40" lean-forward="false" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="40" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="case.py" pinned="false" current-in-tab="false">
-        <entry file="file://C:/Program Files/Anaconda3/Lib/unittest/case.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="599" column="0" lean-forward="false" selection-start-line="599" selection-start-column="0" selection-end-line="599" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -53,7 +44,7 @@
         <entry file="file://$PROJECT_DIR$/notes/bundle_adjustment_ideas.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
-              <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -73,6 +64,9 @@
       <find>draw</find>
       <find>ORB</find>
       <find>print</find>
+      <find>match_ke</find>
+      <find>FLAN</find>
+      <find>FLANN_I</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -82,14 +76,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/notes/bundle_adjustment_ideas.txt" />
-        <option value="$PROJECT_DIR$/MergeImages.py" />
         <option value="$PROJECT_DIR$/test/matchingtest.py" />
+        <option value="$PROJECT_DIR$/MergeImages.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="669" />
-    <option name="y" value="-16" />
+    <option name="x" value="844" />
     <option name="width" value="1294" />
     <option name="height" value="1047" />
   </component>
@@ -143,7 +136,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Nosetests for matchingtest.TestMatchingMethods.test_1">
+  <component name="RunManager" selected="Python tests.Nosetests in matchingtest.py">
     <configuration name="MergeImages" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -214,9 +207,9 @@
     </list>
     <recent_temporary>
       <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Nosetests for matchingtest.TestMatchingMethods.test_1" />
-        <item index="1" class="java.lang.String" itemvalue="Python.MergeImages" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Nosetests in matchingtest.py" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Nosetests in matchingtest.py" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Nosetests for matchingtest.TestMatchingMethods.test_1" />
+        <item index="2" class="java.lang.String" itemvalue="Python.MergeImages" />
         <item index="3" class="java.lang.String" itemvalue="Python tests.Nosetests for matchingtest.TestMatchingMethods.test_all" />
       </list>
     </recent_temporary>
@@ -235,34 +228,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Nosetests_for_matchingtest_TestMatchingMethods_test_1 - 2018.04.03 at 22h 37m 55s.xml">
-      <configuration name="Nosetests for matchingtest.TestMatchingMethods.test_1" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Nosetests_for_matchingtest_TestMatchingMethods_test_1 - 2018.04.03 at 22h 38m 08s.xml">
-      <configuration name="Nosetests for matchingtest.TestMatchingMethods.test_1" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Nosetests_for_matchingtest_TestMatchingMethods_test_1 - 2018.04.03 at 22h 38m 43s.xml">
-      <configuration name="Nosetests for matchingtest.TestMatchingMethods.test_1" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Nosetests_for_matchingtest_TestMatchingMethods_test_1 - 2018.04.03 at 22h 38m 46s.xml">
-      <configuration name="Nosetests for matchingtest.TestMatchingMethods.test_1" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Nosetests_for_matchingtest_TestMatchingMethods_test_1 - 2018.04.03 at 22h 39m 10s.xml">
-      <configuration name="Nosetests for matchingtest.TestMatchingMethods.test_1" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Nosetests_for_matchingtest_TestMatchingMethods_test_1 - 2018.04.03 at 22h 39m 36s.xml">
-      <configuration name="Nosetests for matchingtest.TestMatchingMethods.test_1" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Nosetests_in_matchingtest_py - 2018.04.03 at 22h 34m 07s.xml">
+    <history-entry file="Nosetests_in_matchingtest_py - 2018.04.15 at 14h 49m 07s.xml">
       <configuration name="Nosetests in matchingtest.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_matchingtest_py - 2018.04.03 at 22h 36m 25s.xml">
+    <history-entry file="Nosetests_in_matchingtest_py - 2018.04.15 at 18h 26m 54s.xml">
       <configuration name="Nosetests in matchingtest.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_matchingtest_py - 2018.04.03 at 22h 37m 31s.xml">
+    <history-entry file="Nosetests_in_matchingtest_py - 2018.04.15 at 18h 27m 37s.xml">
       <configuration name="Nosetests in matchingtest.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_matchingtest_py - 2018.04.03 at 22h 37m 39s.xml">
+    <history-entry file="Nosetests_in_matchingtest_py - 2018.04.15 at 18h 27m 55s.xml">
+      <configuration name="Nosetests in matchingtest.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_in_matchingtest_py - 2018.04.15 at 18h 28m 13s.xml">
+      <configuration name="Nosetests in matchingtest.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_in_matchingtest_py - 2018.04.15 at 18h 28m 22s.xml">
+      <configuration name="Nosetests in matchingtest.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_in_matchingtest_py - 2018.04.15 at 18h 28m 38s.xml">
+      <configuration name="Nosetests in matchingtest.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_in_matchingtest_py - 2018.04.15 at 18h 28m 51s.xml">
+      <configuration name="Nosetests in matchingtest.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_in_matchingtest_py - 2018.04.15 at 18h 29m 07s.xml">
+      <configuration name="Nosetests in matchingtest.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_in_matchingtest_py - 2018.04.15 at 18h 29m 20s.xml">
       <configuration name="Nosetests in matchingtest.py" configurationId="tests" />
     </history-entry>
   </component>
@@ -275,7 +268,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3292402" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4589409" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -294,14 +287,16 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/MergeImages.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="1836">
+          <caret line="108" column="39" lean-forward="true" selection-start-line="101" selection-start-column="24" selection-end-line="108" selection-end-column="39" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
             <element signature="e#155#2786#0" expanded="false" />
@@ -309,9 +304,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/37c6e30f13509df12a62ec264e3fa89b.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/test/matchingtest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="14" column="74" lean-forward="true" selection-start-line="14" selection-start-column="74" selection-end-line="14" selection-end-column="74" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/notes/bundle_adjustment_ideas.txt">
@@ -324,16 +324,54 @@
     </entry>
     <entry file="file://C:/Program Files/Anaconda3/Lib/unittest/case.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
+        <state relative-caret-position="9962">
           <caret line="599" column="0" lean-forward="false" selection-start-line="599" selection-start-column="0" selection-end-line="599" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/MergeImages.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#155#2786#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/37c6e30f13509df12a62ec264e3fa89b.jpg" />
+    <entry file="file://$PROJECT_DIR$/notes/bundle_adjustment_ideas.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files/Anaconda3/Lib/unittest/case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test_orb_flann.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/matchingtest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="74" lean-forward="true" selection-start-line="14" selection-start-column="74" selection-end-line="14" selection-end-column="74" />
+        <state relative-caret-position="300">
+          <caret line="21" column="40" lean-forward="false" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="40" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
@@ -342,8 +380,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MergeImages.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="639">
-          <caret line="123" column="46" lean-forward="false" selection-start-line="123" selection-start-column="35" selection-end-line="123" selection-end-column="46" />
+        <state relative-caret-position="850">
+          <caret line="117" column="41" lean-forward="true" selection-start-line="117" selection-start-column="41" selection-end-line="117" selection-end-column="41" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
             <element signature="e#155#2786#0" expanded="false" />

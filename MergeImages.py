@@ -63,9 +63,10 @@ def draw_matches(img1, kp1, img2, kp2, matches, color=None):
     return new_img
 
 
-def get_keypoints(img):
+def get_keypoints(img, searchtype=None):
     """
     :param img: image
+    :param searchtype: the type of keypoint extractor to use
     :return: keypoints and descriptors
     TODO -
         try the following:
@@ -74,30 +75,59 @@ def get_keypoints(img):
             cv2.BRISK_create()
 
     """
-    kpd = cv2.ORB_create()
-    #kpd = cv2.xfeatures2d.SIFT_create()
-   #kpd = cv2.xfeatures2d_FREAK()
+    if not searchtype or searchtype == "ORB":
+        # default is orb
+        kpd = cv2.ORB_create()
 
-    #kpd = cv2.SURF
+    if searchtype == "sift":
+        kpd = cv2.xfeatures2d.SIFT_create()
+
+    elif searchtype == "freak":
+        kpd = cv2.xfeatures2d_FREAK()
+
+    elif searchtype == "surf":
+        kpd = cv2.xfeatures2d.SURF_create()
+
+
     kp, des = kpd.detectAndCompute(img, None)
     return kp, des
 
 
-def match_keypoints(desc1, desc2, k=2, thresh=.9):
+def match_keypoints(desc1, desc2, k=2, thresh=.9, matchertype=None):
     """
-    match keypoints using flann matcher
+    match keypoints using various matchers for more details on cv2 matchers refer to
+    https://docs.opencv.org/3.0-beta/doc/py_tutorials/py_feature2d/py_matcher/py_matcher.html
     :param desc1: descripters of keypoint set 1
     :param desc2: descriptors of keypoint set 2
     :param k: K for flann k nearest neighbors
     :param thresh: threshold for a good match
+    :param matchertype: type of matcher to use (string refering to various objects
     :return:
     """
-    index_params = dict(algorithm=0, trees=5)
-    search_params = dict(checks=50)
-    #matcher = cv2.FlannBasedMatcher(index_params, search_params)
-    matcher = cv2.DescriptorMatcher_create("BruteForce")
-    #matcher = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)
-    matches = matcher.knnMatch(desc1, desc2, k=k)
+    if not matchertype:
+        # default is brute forcce
+        matcher = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)
+        matches = matcher.knnMatch(desc1, desc2, k=3)
+        print(matches)
+
+    elif matchertype == "FlannORB":
+        #
+        FLANN_INDEX_LSH = 6
+        search_params = dict(checks=50)
+        index_params = dict(algorithm=FLANN_INDEX_LSH,
+                            table_number=6,  # 12
+                            key_size=12,  # 20
+                            multi_probe_level=1)  # 2
+        matcher = cv2.FlannBasedMatcher(index_params, search_params)
+        matches = matcher.knnMatch(desc1, desc2, k=2)
+
+    elif matchertype == "FlannSURF":
+        FLANN_INDEX_KDTREE = 2
+        index_params = dict(algorithm=FLANN_INDEX_KDTREE, trees=500)
+        search_params = dict(checks=50)
+        matcher = cv2.FlannBasedMatcher(index_params, search_params)
+        matches = matcher.knnMatch(desc1, desc2, k=2)
+
     goodmatches = []
     for m, n in matches:
         if m.distance < thresh * n.distance:
